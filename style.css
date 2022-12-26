@@ -127,10 +127,10 @@ table {
     background: rgb(33, 188, 16);
     position: relative;
     margin-top: 7px;
-    width: 180px;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
-    height: 420px;
+    height: 500px;
     border-radius: 5px;
     display: block;
   }
