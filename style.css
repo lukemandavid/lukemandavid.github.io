@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+}
+body {
+  background-image: url("/images/1280px-JKUAT-Main-Campus-Gate-A.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  display: flex;
+  background: rgb(33, 188, 16);
+  align-items: center;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+.header img {
+  width: 3.8vw;
+  height: 8vh;
+}
+.login {
+  background: rgb(33, 188, 16);
+  position: relative;
+  margin: 7px auto 0 auto;
+  width: 40vw;
+  height: 90vh;
+  border-radius: 5px;
+}
+.login img {
+  width: 7vw;
+  height: 15vh;
+  margin-left: 17vw;
+  margin-top: 1vh;
+}
+.login-content {
+  padding-left: 2vw;
+}
+
+.login-content h1 {
+  text-align: center;
+}
+.login-content p {
+  font-size: 1.2vw;
+  font-weight: 550;
+}
+.login-content a {
+  color: black;
+  text-decoration: none;
+}
+.login-content a:hover {
+  color: darkblue;
+}
+#details {
+  text-align: center;
+}
+.input {
+  height: 6vh;
+  width: 95%;
+  font-size: 1.2vw;
+  border-radius: 3px;
+  border: none;
+  background: limegreen;
+}
+#btn {
+  width: 95%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+#btn:hover {
+  cursor: pointer;
+  background: dodgerblue;
+}
+table {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .login {
+    background: rgb(33, 188, 16);
+    position: relative;
+    margin-top: 7px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 550px;
+    border-radius: 5px;
+    display: block;
+  }
+  body {
+    background: #000;
+  }
+  .header {
+    display: flex;
+    background: rgb(33, 188, 16);
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .login img {
+    width: 10vw;
+    height: 15vh;
+    margin-left: auto;
+    margin-top: 1vh;
+    margin-right: auto;
+    display: block;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  .login-content h1 {
+    text-align: center;
+    font-size: 35px;
+  }
+  #btn {
+    font-size: 15px;
+  }
+  .login-content p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .login {
+    background: rgb(33, 188, 16);
+    position: relative;
+    margin-top: 7px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 420px;
+    border-radius: 5px;
+    display: block;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .header {
+    display: flex;
+    background: rgb(33, 188, 16);
+    align-items: center;
+    font-size: 6px;
+    font-weight: bold;
+  }
+  .header img {
+    width: 4vw;
+    height: 9vh;
+  }
+  .login-content h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .login img {
+    width: 10vw;
+    height: 15vh;
+    margin-left: auto;
+    margin-top: 1vh;
+    margin-right: auto;
+    display: block;
+  }
+}

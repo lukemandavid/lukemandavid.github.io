@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en_us">
+  <head>
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <title>JOMO KENYATTA UNIVERSITY OF AGRICULTURE AND TECHNOLOGY</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/images/jkuat-logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img src="/images/jkuat-logo.png" alt="jkuat-logo" /><span
+          >JOMO KENYATTA UNIVERSITY OF AGRICULTURE AND TECHNOLOGY</span
+        >
+      </div>
+    </header>
+    <main>
+      <form action="" name="myForm" onsubmit="return validateForm()">
+        <div class="login">
+          <img src="/images/jkuat-logo.png" alt="jkuat-logo" />
+          <!-- The Login Form starts here -->
+          <div class="login-content">
+            <h1>Welcome</h1>
+            <p>
+              To login enter your Student Admission No. /Employee Number and
+              Password
+            </p>
+            <br />
+            <label for="username">Username:</label>
+            <br />
+            <input
+              type="text"
+              name="username"
+              placeholder=" Enter Student No. / Employee No."
+              class="input"
+            />
+            <br /><br />
+            <label for="password">Password:</label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              placeholder=" Enter Password"
+              class="input"
+            />
+            <br /><br />
+            <br />
+            <input type="submit" value="Login" id="btn" />
+            <br /><br /><br />
+            <a href="#">Forgot Password?</a>
+            <a href="#">Create an Account</a>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+  <script>
+    function validateForm() {
+      let x = document.forms["myForm"]["username"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+  </script>
+</html>
