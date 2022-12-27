@@ -3,161 +3,90 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inconsolata", monospace;
+  text-decoration: none;
+  list-style: none;
 }
 body {
-  background-image: url("/images/1280px-JKUAT-Main-Campus-Gate-A.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #fefefe;
 }
-.header {
-  display: flex;
-  background: rgb(33, 188, 16);
-  align-items: center;
-  font-size: 1.5vw;
-  font-weight: bold;
-}
-.header img {
-  width: 3.8vw;
-  height: 8vh;
-}
-.login {
-  background: rgb(33, 188, 16);
-  position: relative;
-  margin: 7px auto 0 auto;
-  width: 40vw;
-  height: 90vh;
-  border-radius: 5px;
-}
-.login img {
-  width: 7vw;
-  height: 15vh;
-  margin-left: 17vw;
-  margin-top: 1vh;
-}
-.login-content {
-  padding-left: 2vw;
-}
-
-.login-content h1 {
-  text-align: center;
-}
-.login-content p {
-  font-size: 1.2vw;
-  font-weight: 550;
-}
-.login-content a {
-  color: black;
-  text-decoration: none;
-}
-.login-content a:hover {
-  color: darkblue;
-}
-#details {
-  text-align: center;
-}
-.input {
-  height: 6vh;
-  width: 95%;
-  font-size: 1.2vw;
-  border-radius: 3px;
-  border: none;
-  background: limegreen;
-}
-#btn {
-  width: 95%;
-  padding: 15px;
-  border-radius: 5px;
-  border: none;
-  font-size: 1.5vw;
-  font-weight: bold;
-}
-#btn:hover {
-  cursor: pointer;
-  background: dodgerblue;
-}
-table {
+header {
   width: 100%;
+  height: 80px;
+  background: #11101b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
 }
-@media screen and (max-width: 768px) {
-  .login {
-    background: rgb(33, 188, 16);
-    position: relative;
-    margin-top: 7px;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 550px;
-    border-radius: 5px;
+.logo {
+  color: #fefefe;
+  font-size: 28px;
+  font-weight: bold;
+}
+.hamburger {
+  display: none;
+}
+.nav-btn ul {
+  display: flex;
+}
+.nav-btn ul li a {
+  display: block;
+  color: #fefefe;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+#home {
+  background: #fefefe;
+  color: #000;
+  margin-right: 5px;
+}
+.nav-btn ul li a:hover {
+  background: #fefefe;
+  color: #000;
+}
+@media screen and (max-width: 850px) {
+  .hamburger {
     display: block;
+    cursor: pointer;
   }
-  body {
-    background: #000;
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 6px;
   }
-  .header {
-    display: flex;
-    background: rgb(33, 188, 16);
-    align-items: center;
-    font-size: 18px;
-    font-weight: bold;
+  .nav-btn {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #11101b;
+    transition: 0.3s;
   }
-  .login img {
-    width: 10vw;
-    height: 15vh;
-    margin-left: auto;
-    margin-top: 1vh;
-    margin-right: auto;
+  .nav-btn ul {
     display: block;
-  }
-  ::-webkit-input-placeholder {
-    font-size: 15px;
-  }
-  .login-content h1 {
+    width: fit-content;
+    margin: 80px auto 0 auto;
     text-align: center;
-    font-size: 35px;
+    opacity: 0;
   }
-  #btn {
-    font-size: 15px;
+  .nav-btn.active {
+    height: 450px;
   }
-  .login-content p {
-    font-size: 12px;
+  .nav-btn.active ul {
+    opacity: 1;
+  }
+  .nav-btn ul li a {
+    margin-bottom: 12px;
+    overflow: hidden;
   }
 }
-@media screen and (max-width: 420px) {
-  .login {
-    background: rgb(33, 188, 16);
-    position: relative;
-    margin-top: 7px;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 500px;
-    border-radius: 5px;
-    display: block;
-  }
-  ::-webkit-input-placeholder {
-    font-size: 12px;
-  }
-  .header {
-    display: flex;
-    background: rgb(33, 188, 16);
-    align-items: center;
-    font-size: 6px;
-    font-weight: bold;
-  }
-  .header img {
-    width: 4vw;
-    height: 9vh;
-  }
-  .login-content h1 {
-    text-align: center;
+@media screen and (max-width: 286px) {
+  .logo {
     font-size: 25px;
-  }
-  .login img {
-    width: 10vw;
-    height: 15vh;
-    margin-left: auto;
-    margin-top: 1vh;
-    margin-right: auto;
-    display: block;
   }
 }
